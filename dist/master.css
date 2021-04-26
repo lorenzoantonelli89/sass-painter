@@ -2,14 +2,13 @@
   height: 100vh;
 }
 #container-home-page div[class*=content] {
-  width: 80%;
+  width: 65%;
   margin: 0 auto;
-  background-color: green;
-  border: 1px solid black;
 }
 #container-home-page header {
   width: 100%;
   background-color: #000;
+  padding: 15px 0;
 }
 #container-home-page header .content-header .info-top-header {
   margin-top: 15px;
@@ -36,7 +35,10 @@
   padding-right: 80px;
 }
 #container-home-page #jumbotron {
-  background-color: lightblue;
+  background-image: url(img/bg-painter-home.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
 }
 #container-home-page #jumbotron .content-jumbotron {
   padding: 30px 0 70px 0;
@@ -64,6 +66,7 @@
 #container-home-page #jumbotron .content-jumbotron div button:first-child {
   background-color: #000;
   color: #fff;
+  margin-right: 30px;
 }
 #container-home-page #jumbotron .content-jumbotron div button:last-child {
   background-color: inherit;
@@ -71,10 +74,80 @@
 #container-home-page main {
   width: 100%;
   background-color: #e8e8e8;
-  height: 600px;
 }
-#container-home-page main .content-main {
-  height: 500px;
+#container-home-page main .content-main section.first h2 {
+  text-align: center;
+  padding: 50px 0;
+}
+#container-home-page main .content-main section.first div.block-section-first {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#container-home-page main .content-main section.first div.block-section-first div {
+  min-height: 180px;
+  background-color: #fff;
+}
+#container-home-page main .content-main section.first div.block-section-first div img {
+  width: 100%;
+}
+#container-home-page main .content-main section.first div.block-section-first div .container-text {
+  padding: 20px;
+}
+#container-home-page main .content-main section.first div.block-section-first div .container-text h4, #container-home-page main .content-main section.first div.block-section-first div .container-text p {
+  margin-bottom: 25px;
+}
+#container-home-page main .content-main section.first div.block-section-first div .container-text p {
+  width: 90%;
+}
+#container-home-page main .content-main section.first div.block-section-first #center-block {
+  margin: 0 2%;
+}
+#container-home-page main .content-main section.second {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 50px 0;
+}
+#container-home-page main .content-main section.second div[class*=card] {
+  flex-basis: 50%;
+  min-height: 300px;
+}
+#container-home-page main .content-main section.second div[class*=card] .text {
+  padding: 60px;
+}
+#container-home-page main .content-main section.second div[class*=card] .text p {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+#container-home-page main .content-main section.second div[class*=card] .text button {
+  padding: 8px 13px;
+  border-color: #000;
+}
+#container-home-page main .content-main section.second .card-1 {
+  background-color: #3c1567;
+  color: #fff;
+}
+#container-home-page main .content-main section.second .card-2 {
+  background-image: url(img/wacom-painter.jpg);
+  background-size: cover;
+}
+#container-home-page main .content-main section.second .card-3 {
+  background-image: url(img/painter-master.jpg);
+  background-size: cover;
+}
+#container-home-page main .content-main section.second .card-4 {
+  background-color: #3c3c3c;
+  color: #fff;
+}
+#container-home-page main .content-main section.second .card-5 {
+  background-color: #0072bc;
+  color: #fff;
+}
+#container-home-page main .content-main section.second .card-6 {
+  background-image: url(img/business-education.jpg);
+  background-size: cover;
 }
 #container-home-page footer {
   width: 100%;

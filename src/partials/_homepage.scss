@@ -1,5 +1,5 @@
 @mixin margin-auto{
-    width: 80%;
+    width: 65%;
     margin: 0 auto;
 }
 @mixin italic-pink{
@@ -15,19 +15,24 @@
     align-items: center;
 }
 
+@mixin background-size{
+    background-size: cover;
+}
+
 #container-home-page{
     height: 100vh;
 
     div[class*="content"]{
         @include margin-auto;
-        // regole debug
-        background-color: green;
-        border: 1px solid black;
+        // // regole debug
+        // background-color: green;
+        // border: 1px solid black;
     }
 
     header{
         width: 100%;
         background-color: $bg-secondary;
+        padding: 15px 0;
 
         .content-header{
             .info-top-header{
@@ -57,9 +62,10 @@
     }
 
     #jumbotron{
-        // background-image: url(img/bg-painter-home.jpg);
-        // regole debug
-        background-color: lightblue;
+        background-image: url(img/bg-painter-home.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 400px;
 
         .content-jumbotron{
             padding: 30px 0 70px 0;
@@ -85,6 +91,7 @@
                 button:first-child{
                     background-color: $bg-secondary;
                     color: $color-white;
+                    margin-right: 30px;
                 }
                 button:last-child{
                     background-color: inherit;
@@ -96,12 +103,93 @@
     main{
         width: 100%;
         background-color: $bg-primary;
-        // regole debug
-        height: 600px;
 
         .content-main{
-            // regole debug
-            height: 500px;
+            section.first{
+
+                h2{
+                    text-align: center;
+                    padding: 50px 0;
+                }
+                div.block-section-first{
+                    @include display-flex-row;
+                    justify-content: space-around;
+
+                    div{
+                        min-height: 180px;
+                        background-color: $color-white;
+
+                        img{
+                            width: 100%;
+                        }
+                        .container-text{
+                            padding: 20px;
+
+                            h4, p{
+                                margin-bottom: 25px;
+                            }
+                            p{
+                                width: 90%;
+                            }
+                        }
+                    }
+                    #center-block{
+                        margin: 0 2%;
+                    }
+                }
+            }
+
+            section.second{
+                width: 100%;
+                @include display-flex-row;
+                flex-wrap: wrap;
+                margin: 50px 0;
+
+                div[class*="card"]{
+                    flex-basis: 50%;
+                    min-height: 300px;
+
+                    .text{
+                        padding: 60px;
+
+                        p{
+                            margin-top: 30px;
+                            margin-bottom: 20px;
+                        }
+                        button{
+                            @include button;
+                        }
+                    }
+                }
+
+                .card-1{
+                    background-color: #3c1567;
+                    color: $color-white;
+                }
+                .card-2{
+                    background-image: url(img/wacom-painter.jpg);
+                    // background-position: center;
+                    background-size: cover;
+                }
+                .card-3{
+                    background-image: url(img/painter-master.jpg);
+                    background-size: cover;
+                }
+                .card-4{
+                    background-color: #3c3c3c;
+                    color: $color-white;
+                }
+                .card-5{
+                    background-color: #0072bc;
+                    color: $color-white;
+                }
+                .card-6{
+                    background-image: url(img/business-education.jpg);
+                    background-size: cover;
+
+
+                }
+            }
         }
     }
 
