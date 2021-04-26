@@ -149,6 +149,56 @@
   background-image: url(img/business-education.jpg);
   background-size: cover;
 }
+#container-home-page main .content-main section.third .container-list {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}
+#container-home-page main .content-main section.third .container-list ul {
+  list-style: none;
+  width: calc(100% / 4);
+  min-height: 300px;
+}
+#container-home-page main .content-main section.third .container-list ul li {
+  padding-bottom: 20px;
+}
+#container-home-page main .content-main section.third .container-list ul li a {
+  text-decoration: none;
+}
+#container-home-page main .content-main section.third .social-link {
+  padding-bottom: 30px;
+}
+#container-home-page main .content-main section.third .social-link ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  list-style: none;
+}
+#container-home-page main .content-main section.third .social-link ul li {
+  padding-right: 15px;
+}
+#container-home-page main .content-main section.third .social-link ul li a {
+  text-decoration: none;
+  font-size: 35px;
+}
+#container-home-page main .content-main section.third .social-link ul li .fa-instagram-square {
+  color: #e4405f;
+}
+#container-home-page main .content-main section.third .social-link ul li .fa-facebook-square {
+  color: #3b5998;
+}
+#container-home-page main .content-main section.third .social-link ul li .fa-twitter-square {
+  color: #1da1f2;
+}
+#container-home-page main .content-main section.third .social-link ul li .fa-youtube-square {
+  color: #cd201f;
+}
+#container-home-page main .content-main section.third .social-link ul li .fa-pinterest-square {
+  color: #bd081c;
+}
+#container-home-page main .content-main section.third .social-link ul li .fa-wifi {
+  color: #ff8d00;
+}
 #container-home-page footer {
   width: 100%;
   background-color: #000;

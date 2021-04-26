@@ -190,6 +190,77 @@
 
                 }
             }
+            section.third{
+
+                .container-list{
+                    @include display-flex-row;
+                    padding-left: 15px;
+
+                    ul{
+                        list-style: none;
+                        width: calc(100% / 4);
+                        min-height: 300px;
+
+                        li{
+                            padding-bottom: 20px;
+
+                            a{
+                                text-decoration: none;
+                            }
+                        }
+                    }
+
+                }
+                .social-link{
+                    padding-bottom: 30px;
+
+                    ul{
+                        @include display-flex-row;
+                        justify-content: flex-end;
+                        list-style: none;
+
+                        li{
+                            padding-right: 15px;
+
+                            a{
+                                text-decoration: none;
+                                font-size: 35px;
+                            }
+                        }
+                        li{
+                            .fa-instagram-square{
+                                color: #e4405f;
+                            }
+                        }
+                        li{
+                            .fa-facebook-square{
+                                color: #3b5998;
+                            }
+                        }
+                        li{
+                            .fa-twitter-square{
+                                color: #1da1f2;
+                            }
+                        }
+                        li{
+                            .fa-youtube-square{
+                                color: #cd201f;
+                            }
+                        }
+                        li{
+                            .fa-pinterest-square{
+                                color: #bd081c;
+                            }
+                        }
+                        li{
+                            .fa-wifi{
+                                color: #ff8d00;
+                            }
+                        }
+                    }
+
+                }
+            }
         }
     }
 
