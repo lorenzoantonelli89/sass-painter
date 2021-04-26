@@ -15,18 +15,11 @@
     align-items: center;
 }
 
-@mixin background-size{
-    background-size: cover;
-}
-
 #container-home-page{
     height: 100vh;
 
     div[class*="content"]{
         @include margin-auto;
-        // // regole debug
-        // background-color: green;
-        // border: 1px solid black;
     }
 
     header{
@@ -55,7 +48,7 @@
                 @include display-flex-row;
                 color: $color-white;
                 li{
-                    padding-right: 80px;
+                    padding-right: 40px;
                 }
             }
         }
@@ -131,6 +124,14 @@
                             p{
                                 width: 90%;
                             }
+                            span{
+                                font-style: italic;
+                                color: $color-blue;
+                            }
+                            a{
+                                text-decoration: none;
+                                color: $color-blue;
+                            }
                         }
                     }
                     #center-block{
@@ -168,8 +169,12 @@
                 }
                 .card-2{
                     background-image: url(img/wacom-painter.jpg);
-                    // background-position: center;
                     background-size: cover;
+
+                    img{
+                        width: 400px;
+                        padding-top: 30px;
+                    }
                 }
                 .card-3{
                     background-image: url(img/painter-master.jpg);
@@ -267,12 +272,23 @@
     footer{
         width: 100%;
         background-color: $bg-secondary;
-        // regole debug
-        height: 100px;
 
         .content-footer{
-            // regole debug
-            height: 70px;
+            height: 100px;
+            @include display-flex-row;
+            justify-content: space-between;
+
+            .copyright{
+
+                a{
+                    text-decoration: none;
+                    color: #50544a;
+                    padding-right: 20px;
+                }
+                span{
+                    color: $color-white;
+                }
+            }
         }
     }
 

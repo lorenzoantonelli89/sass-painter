@@ -32,7 +32,7 @@
   color: #fff;
 }
 #container-home-page header .content-header ul li {
-  padding-right: 80px;
+  padding-right: 40px;
 }
 #container-home-page #jumbotron {
   background-image: url(img/bg-painter-home.jpg);
@@ -100,6 +100,14 @@
 #container-home-page main .content-main section.first div.block-section-first div .container-text p {
   width: 90%;
 }
+#container-home-page main .content-main section.first div.block-section-first div .container-text span {
+  font-style: italic;
+  color: #009cff;
+}
+#container-home-page main .content-main section.first div.block-section-first div .container-text a {
+  text-decoration: none;
+  color: #009cff;
+}
 #container-home-page main .content-main section.first div.block-section-first #center-block {
   margin: 0 2%;
 }
@@ -132,6 +140,10 @@
 #container-home-page main .content-main section.second .card-2 {
   background-image: url(img/wacom-painter.jpg);
   background-size: cover;
+}
+#container-home-page main .content-main section.second .card-2 img {
+  width: 400px;
+  padding-top: 30px;
 }
 #container-home-page main .content-main section.second .card-3 {
   background-image: url(img/painter-master.jpg);
@@ -202,10 +214,20 @@
 #container-home-page footer {
   width: 100%;
   background-color: #000;
-  height: 100px;
 }
 #container-home-page footer .content-footer {
-  height: 70px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#container-home-page footer .content-footer .copyright a {
+  text-decoration: none;
+  color: #50544a;
+  padding-right: 20px;
+}
+#container-home-page footer .content-footer .copyright span {
+  color: #fff;
 }
 
 * {
