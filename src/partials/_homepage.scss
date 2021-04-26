@@ -1,0 +1,11 @@
+@mixin display-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container-home{
+    display: flex;
+    height: 100vh;
+    background-color: $bg-one;
+}
