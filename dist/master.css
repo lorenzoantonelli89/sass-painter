@@ -1,7 +1,88 @@
-#container-home {
-  display: flex;
+#container-home-page {
   height: 100vh;
+}
+#container-home-page div[class*=content] {
+  width: 80%;
+  margin: 0 auto;
+  background-color: green;
+  border: 1px solid black;
+}
+#container-home-page header {
+  width: 100%;
+  background-color: #000;
+}
+#container-home-page header .content-header .info-top-header {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+#container-home-page header .content-header .info-top-header i {
+  color: #009cff;
+  padding-right: 8px;
+}
+#container-home-page header .content-header .info-top-header span {
+  color: #655f50;
+  padding-right: 20px;
+}
+#container-home-page header .content-header ul {
+  list-style: none;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+#container-home-page header .content-header ul li {
+  padding-right: 80px;
+}
+#container-home-page #jumbotron {
   background-color: lightblue;
+}
+#container-home-page #jumbotron .content-jumbotron {
+  padding: 30px 0 70px 0;
+}
+#container-home-page #jumbotron .content-jumbotron img {
+  width: 20%;
+}
+#container-home-page #jumbotron .content-jumbotron p {
+  width: 35%;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+#container-home-page #jumbotron .content-jumbotron h3, #container-home-page #jumbotron .content-jumbotron span {
+  color: #ce3db0;
+  font-style: italic;
+}
+#container-home-page #jumbotron .content-jumbotron div {
+  margin-top: 20px;
+}
+#container-home-page #jumbotron .content-jumbotron div button {
+  padding: 8px 13px;
+  border-color: #000;
+}
+#container-home-page #jumbotron .content-jumbotron div button:first-child {
+  background-color: #000;
+  color: #fff;
+}
+#container-home-page #jumbotron .content-jumbotron div button:last-child {
+  background-color: inherit;
+}
+#container-home-page main {
+  width: 100%;
+  background-color: #e8e8e8;
+  height: 600px;
+}
+#container-home-page main .content-main {
+  height: 500px;
+}
+#container-home-page footer {
+  width: 100%;
+  background-color: #000;
+  height: 100px;
+}
+#container-home-page footer .content-footer {
+  height: 70px;
 }
 
 * {
